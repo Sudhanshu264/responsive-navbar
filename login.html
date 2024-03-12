@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            margin-top: 1vh;
+        }
+
+        .center {
+            width: 80%;
+            margin: auto;
+        }
+
+        .center h3 {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            margin-bottom: 2px;
+        }
+
+        .center input {
+            padding: 10px 0;
+            width: 99.5%;
+            margin-bottom: 5px;
+        }
+
+        .center button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+        }
+
+        .heading-text {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./login.js"></script>
+
+    <div class="main">
+        <div class="center">
+            <h3>Keyboard Events</h3>
+            <h3 id="hname">Name : </h3>
+            <h3 id="hemail">Email : </h3>
+            <h3 id="hphone">Phone : </h3>
+            <h3 id="hdesignation">Designation : </h3>
+            <h3 id="hsalary">Salary : </h3>
+            <h3 id="hcity">City : </h3>
+            <h3 id="hstate">State : </h3>
+            <form onsubmit="postData();return false">
+                <input type="text" id="name" required minlength="3" placeholder="Full Name" onfocus="fun1(event)"
+                    onblur="fun2(event)" onchange="fun3(event)">
+                <input type="email" id="email" required minlength="13" placeholder="Eamil Address" onfocus="fun1(event)"
+                    onblur="fun2(event)" onchange="fun3(event)">
+                <input type="tel" id="phone" required minlength="3" placeholder="Phone Number" onfocus="fun1(event)"
+                    onblur="fun2(event)" onchange="fun3(event)" pattern="[6-9]{1}[0-9]{9}">
+                <input type="text" id="designation" required minlength="3" placeholder="Designation"
+                    onfocus="fun1(event)" onblur="fun2(event)" onchange="fun3(event)">
+                <input type="text" id="salary" required minlength="3" placeholder="Salary" onfocus="fun1(event)"
+                    onblur="fun2(event)" onchange="fun3(event)">
+                <input type="text" id="city" required minlength="3" placeholder="City Name" onfocus="fun1(event)"
+                    onblur="fun2(event)" onchange="fun3(event)">
+                <input type="text" id="state" required minlength="3" placeholder="State Name" onfocus="fun1(event)"
+                    onblur="fun2(event)" onchange="fun3(event)">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

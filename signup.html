@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+</head>
+<body>
+  <script src="./signup.js"></script>
+  <h2 style="text-align: center; color: #333;">Signup</h2>
+  <form id="signupForm" onsubmit="return validateForm()" style="max-width: 300px; margin: 0 auto;">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" style="width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box;"><br>
+    <span id="usernameError" class="error" style="color: red;"></span><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" style="width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box;"><br>
+    <span id="emailError" class="error" style="color: red;"></span><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" style="width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box;"><br>
+    <span id="passwordError" class="error" style="color: red;"></span><br>
+
+    <input type="submit" value="Signup" style="background-color: #4CAF50; color: white; padding: 10px; border: none; cursor: pointer; width: 100%;">
+  </form>
+
+
+</body>
+</html>
